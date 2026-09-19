@@ -1,4 +1,4 @@
-# Awesome AI Governance (Merged)
+# Awesome AI Governance 
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
