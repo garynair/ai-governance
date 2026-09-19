@@ -7,7 +7,7 @@ A curated list of standards, regulations, tools, and platforms for governing AI 
 
 **Scope:** Anything that materially helps a practitioner build, ship, audit, or operate AI — including autonomous agents — in a way that is accountable, auditable, and compliant. Not pure AI ethics commentary, alignment philosophy, or generic AI news.
 
-**Why now:** The EU AI Act's high-risk obligations under Annex III apply from 2 August 2026. China's Interim Measures for generative AI have been in force since 2023, and India's DPDP Rules 2025 are now operationalising its data protection law with phased deadlines. NIST AI RMF is production-ready. The OWASP Agentic AI Top 10 documents real attack patterns. Claude Code, Copilot, Cursor, and autonomous agent frameworks are now standard tools in enterprise software teams. Governance is no longer optional.
+**Why now:** The EU AI Act's high-risk obligations under Annex III apply from 2 August 2026. China's Interim Measures for generative AI have been in force since 2023, and India's DPDP Rules 2025 are now operationalising its data protection law with phased deadlines. ISO/IEC 42001 certification programmes are live, and NIST AI RMF is production-ready. The OWASP Agentic AI Top 10 documents real attack patterns. Claude Code, Copilot, Cursor, and autonomous agent frameworks are now standard tools in enterprise software teams. Governance is no longer optional.
 
 Contributions welcome.
 
