@@ -5,8 +5,6 @@
 
 A curated list of standards, regulations, tools, and platforms for governing AI systems — from regulatory compliance in regulated industries down to runtime policy enforcement for autonomous agents.
 
-This list merges and deduplicates two source lists: [awesome-ai-agent-governance](https://github.com/systempromptio/awesome-ai-agent-governance) (runtime governance of AI agents) and [awesome-ai-governance](https://github.com/Aperintelligence/awesome-ai-governance) (AI governance for regulated environments). Both were released under CC0 1.0 Universal; this compilation is released under the same terms — see [Licence](#licence).
-
 **Scope:** Anything that materially helps a practitioner build, ship, audit, or operate AI — including autonomous agents — in a way that is accountable, auditable, and compliant. Not pure AI ethics commentary, alignment philosophy, or generic AI news.
 
 **Why now:** The EU AI Act's high-risk obligations under Annex III apply from 2 August 2026. NIST AI RMF is production-ready. The OWASP Agentic AI Top 10 documents real attack patterns. Claude Code, Copilot, Cursor, and autonomous agent frameworks are now standard tools in enterprise software teams. Governance is no longer optional.
@@ -390,5 +388,7 @@ Interactive tools that answer common governance questions without a signup. Each
 PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the criteria a new entry must meet.
 
 ## Licence
+
+This list merges and deduplicates two source lists: [awesome-ai-agent-governance](https://github.com/systempromptio/awesome-ai-agent-governance) (runtime governance of AI agents) and [awesome-ai-governance](https://github.com/Aperintelligence/awesome-ai-governance) (AI governance for regulated environments). Both were released under CC0 1.0 Universal.
 
 This list is published under [CC0 1.0 Universal](LICENSE), consistent with the licence of both source lists it merges. The linked resources retain their own licences.
