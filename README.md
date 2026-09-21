@@ -380,6 +380,10 @@ Interactive tools that answer common governance questions without a signup. Each
 - [awesome-ai-governance](https://github.com/Aperintelligence/awesome-ai-governance) - This list's other source list. Broader focus on AI governance for regulated industries.
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Comprehensive directory of MCP server implementations.
 - [AwesomeResponsibleAI](https://github.com/AthenaCore/AwesomeResponsibleAI) - Academic and policy resources for responsible AI covering ethics, standards, and regulatory frameworks.
+- [Security Frameworks](https://github.com/garynair/security-frameworks) - A companion curated list covering NIST CSF, ISO/IEC 27001, PCI-DSS, CIS Controls, DISA STIG, and the CRI Profile — the general-purpose control baseline this list builds on.
+- [Risk Management](https://github.com/garynair/risk-management) - A companion curated list covering the risk register, heat maps, and treatment planning that unresolved findings from this list feed into.
+- [IT Audit & Controls](https://github.com/garynair/it-audit-controls) - A companion curated list covering COBIT, COSO, and ITGC/ITAC — the audit-testing discipline that validates whether controls are actually operating.
+- [Privacy Compliance](https://github.com/garynair/privacy) - A companion curated list covering GDPR, CCPA/CPRA, and the US state privacy patchwork — the privacy-specific obligations that run alongside these requirements.
 
 ---
 
