@@ -62,7 +62,7 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 - [UK ICO Guidance on AI and Data Protection](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/) - The UK regulator's positioning on automated decisions and AI under UK GDPR.
 - [FCA Consumer Duty](https://www.fca.org.uk/firms/consumer-duty) - UK financial-services regulator's framework, increasingly applied to AI-mediated outcomes.
 - [NHS DSPT](https://www.dsptoolkit.nhs.uk/) - NHS Data Security and Protection Toolkit. The compliance gate for healthtech ingesting NHS data.
-- [Singapore Model AI Governance Framework](https://www.pdpc.gov.sg/help-and-resources/2020/01/model-artificial-intelligence-governance-framework) - Widely referenced voluntary framework from Singapore's PDPC. Practical and well-structured for deployers.
+- [Singapore Model AI Governance Framework](https://www.pdpc.gov.sg/help-and-resources/2020/01/model-ai-governance-framework) - Widely referenced voluntary framework from Singapore's PDPC. Practical and well-structured for deployers.
 - [Canada Artificial Intelligence and Data Act (AIDA)](https://ised-isde.canada.ca/site/innovation-better-canada/en/artificial-intelligence-and-data-act) - Canada's proposed AI regulation, part of Bill C-27 (prorogued January 2025; did not become law). Retains relevance as the reference point for Canadian AI governance discussions.
 - [China: Interim Measures for the Management of Generative AI Services](https://www.chinalawtranslate.com/en/generative-ai-interim/) - China's first dedicated generative AI regulation, in force since August 2023 and jointly issued by seven state authorities led by the Cyberspace Administration of China. Covers providers of text, image, audio, video, and code generation services to the public. English translation via China Law Translate.
 - [Digital Personal Data Protection Act, 2023 (India)](https://www.meity.gov.in/content/digital-personal-data-protection-act-2023) - India's federal data protection law, governing the processing of digital personal data. The Digital Personal Data Protection Rules 2025, notified 13 November 2025, operationalize it with phased compliance deadlines.
@@ -113,7 +113,7 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 
 ## Open-Source Governance Toolkits and Primitives
 
-- [AffixIO](https://github.com/AffixIO/SDK) - Agentic Pay Kit (npm `affixio`) with host-side signed yes/no ACTION attestation before agent pay and tool gates (x402BeforePay / Agentic Pay / KYA; not person KYC). ([npm](https://www.npmjs.com/package/affixio)) ([docs](https://www.affix-io.com/agent-trust/))
+- [AffixIO](https://www.affix-io.com/agent-trust/) - Agentic Pay Kit (npm `affixio`) with host-side signed yes/no ACTION attestation before agent pay and tool gates (x402BeforePay / Agentic Pay / KYA; not person KYC). ([npm](https://www.npmjs.com/package/affixio))
 - [Agentlas OS](https://github.com/agentlas-ai/Agentlas-OS) - Apache-2.0 local-first Agent Operation Environment (AOE) with explicit permission scopes, least-privilege tool access, verification gates, and local execution receipts across Claude Code, Codex, Gemini CLI, Cursor, and local models.
 - [AgentLock](https://github.com/webpro255/agentlock) - Pre-action authorization for AI agent tool calls. Deny-by-default gate with five decision types, session-level behavioral scoring, Ed25519 signed receipts, and hash-chained audit. Published adversarial benchmark with regression data.
 - [Agent Passport System](https://github.com/aeoess/agent-passport-system) - Apache-2.0 protocol for agent identity, scoped delegation, runtime enforcement, and signed action receipts. Includes TypeScript and Python SDKs and an MCP server with 150 governance tools.
@@ -171,7 +171,6 @@ Interactive tools that answer common governance questions without a signup. Each
 - [Credo AI](https://www.credo.ai/) - Comprehensive AI governance platform covering risk assessment, compliance mapping (EU AI Act, NIST AI RMF, ISO 42001), model cards, and ongoing monitoring across the AI lifecycle. Mature regulator-facing posture.
 - [AgenticRail](https://agenticrail.nz/product/) - Hosted pre-execution gate for AI agent step order. The caller declares the intended sequence in advance, any step presented out of order is refused before it executes, and the sequence is sealed on completion. Every decision, permit and refusal alike, is written to an Ed25519-signed, hash-chained receipt that verifies offline against published keys. Closed source, free tier with a public demo key.
 - [Certiv](https://certiv.ai/) - Endpoint-native, pre-execution security and governance layer for AI agents. An endpoint agent inspects agent actions and tool calls on the device and enforces policy before they execute, with an audit trail of allowed and blocked actions.
-- [CoreBase](https://corebasehq.com/) - Governance layer for agents that read and write to live business systems; databases, REST and GraphQL APIs, MCP servers, and 50+ SaaS apps. Enforces rules on every tool call, holds risky actions for human sign-off, and logs executed and blocked calls alike. Per-tenant Postgres row-level security, embeddable widget, and an API.
 - [HiddenLayer](https://hiddenlayer.com/) - AI detection and response platform. Monitors AI models for adversarial attacks, data extraction attempts, and policy violations.
 - [Holistic AI](https://www.holisticai.com/) - EU AI Act focused governance platform.
 - [Fiddler AI](https://www.fiddler.ai/) - AI observability and audit platform.
@@ -199,7 +198,6 @@ Interactive tools that answer common governance questions without a signup. Each
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - The canonical Claude Code community list covering tooling, hooks, slash-commands, agent skills, and workflows.
 - [awesome-claude-code-security](https://github.com/efij/awesome-claude-code-security) - Curated list focused on Claude Code hardening: MCP server security, secrets scanning, prompt injection detection, and red-teaming frameworks.
 - [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code) - Anthropic's documentation on the permissions model, CLAUDE.md configuration, MCP server setup, and hook system.
-- [eu-ai-act-compliance-mcp](https://github.com/CSOAI-ORG/eu-ai-act-compliance-mcp) - MCP server for EU AI Act compliance checking and risk classification of AI systems.
 - [Helio](https://github.com/gethelio/helio) - Proxy that governs tool calls from any MCP client. Declarative YAML policies match on tool name, annotations, input parameters, and cumulative state; irreversible actions route to approval workflows; cross-tool spend caps and rate limits apply at the gate; and every call lands in an audit trail with a bundled dashboard. Apache-2.0.
 - [mcp-airlock](https://github.com/Shalimov04/mcp-airlock) - Governance proxy in front of an MCP server. Each tool gets a risk tier per environment: read-only, forced dry run, dry run then human confirmation over a signed approve link, or straight through. The confirmation token is HMAC-signed and self-contained, so the proxy keeps no approval store, any replica can finish a confirmation, and each token is spent exactly once; a replay, a tampered argument or a bad signature is refused with a named rule. Blast-radius limits cap how many objects one call and one principal may touch per hour, every call writes a JSONL audit record before and after, and secrets are redacted on the way out. Python, MIT.
 - [MCP Specification](https://modelcontextprotocol.io/specification/) - The Model Context Protocol specification, Anthropic's open standard for connecting AI agents to tools and data sources. The de facto standard for agentic tool use; understanding it is prerequisite to governing and auditing it.
@@ -222,7 +220,7 @@ Interactive tools that answer common governance questions without a signup. Each
 - [Casbin](https://www.casbin.org/) - Multi-model access control library supporting ACL, RBAC with hierarchy and domain, ABAC, and RESTful models in 10+ languages, including Go, Rust, Python, Java, and Node.js.
 - [Cedar](https://www.cedarpolicy.com/) - AWS-designed policy language and engine for fine-grained authorization. Formally verified semantics, expressive human-readable syntax, and high throughput for per-request agent permission decisions.
 - [GOPAL](https://github.com/Principled-Evolution/gopal) - Library of OPA/Rego policies encoding AI-governance regulations as executable allow/deny checks, covering the EU AI Act, NIST AI RMF, UK GDPR Arts 22A-22D, aviation (ICAO/FAA/EASA), FERPA, and financial-services rules. Loads into an OPA server for request-path queries or runs under `opa eval`. Apache-2.0.
-- [HashiCorp Sentinel](https://www.hashicorp.com/sentinel) - Policy-as-code framework for Terraform, Vault, Consul, and Nomad. Useful for governing infrastructure provisioned by AI agents.
+- [HashiCorp Sentinel](https://developer.hashicorp.com/sentinel) - Policy-as-code framework for Terraform, Vault, Consul, and Nomad. Useful for governing infrastructure provisioned by AI agents.
 - [Open Policy Agent](https://github.com/open-policy-agent/opa) - CNCF-graduated general-purpose policy engine using the Rego language. Decouples policy from application logic; increasingly used for agent tool authorization.
 - [OPA Rego Playground](https://play.openpolicyagent.org/) - Browser-based environment for writing and testing OPA/Rego policies without local setup.
 - [Ory Keto](https://github.com/ory/keto) - Open-source permission server implementing Google Zanzibar's relation-based access control model for fine-grained agent tool permissions.
@@ -322,11 +320,11 @@ Interactive tools that answer common governance questions without a signup. Each
 - [European Commission AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office) - The EU AI Office, responsible for implementing the AI Act at EU level.
 - [UK AI Safety Institute](https://www.aisi.gov.uk/) - UK government body responsible for evaluating safety of advanced AI models. Publishes evaluation methodologies and results.
 - [US AI Safety Institute (NIST)](https://www.nist.gov/aisi) - The US AI Safety Institute, established within NIST.
-- [Financial Conduct Authority (FCA)](https://www.fca.org.uk/publications/discussion-papers/dp2-22-ai-and-machine-learning) - UK financial-services regulator. Their AI/ML discussion paper and Consumer Duty guidance are the primary documents for fintech AI governance.
+- [Financial Conduct Authority (FCA)](https://www.fca.org.uk/firms/artificial-intelligence) - UK financial-services regulator. Their AI hub (discussion papers, Consumer Duty guidance) is the primary reference for fintech AI governance.
 - [Prudential Regulation Authority (PRA)](https://www.bankofengland.co.uk/prudential-regulation) - UK prudential regulator for banks and insurers. Their AI in financial services work runs alongside the FCA's.
 - [European Banking Authority (EBA)](https://www.eba.europa.eu/) - EU banking regulator. Their guidelines on internal governance and ICT risk management apply to AI systems in financial services.
 - [European Securities and Markets Authority (ESMA)](https://www.esma.europa.eu/) - EU capital markets regulator. Published guidance on AI in investment management and financial advice.
-- [US Federal Trade Commission (FTC)](https://www.ftc.gov/business-guidance/blog/2023/02/keep-your-ai-claims-in-check) - US consumer protection regulator. Their AI guidance focuses on deceptive claims, discrimination, and unfair practices in AI-mediated consumer decisions.
+- [US Federal Trade Commission (FTC)](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc) - US consumer protection regulator. Their tech policy hub covers deceptive claims, discrimination, and unfair practices in AI-mediated consumer decisions.
 - [Google Secure AI Framework](https://safety.google/cybersecurity-advancements/saif/) - Google's framework for securing AI systems with six core elements covering foundations, detection, response, and standardisation.
 - [NIST AI Resource Center](https://airc.nist.gov/) - Central hub for NIST AI governance resources including AI RMF, TEVV guidance, and sector-specific playbooks.
 - [OpenSSF AI/ML Security Working Group](https://openssf.org/) - Open Source Security Foundation working group on security for AI and ML supply chains. Produces guidance on securing training pipelines and model artifacts.
@@ -340,7 +338,7 @@ Interactive tools that answer common governance questions without a signup. Each
 - [EU AI Act Compliance Checker](https://artificialintelligenceact.eu/assessment/eu-ai-act-compliance-checker/) - Interactive tool for assessing whether a specific AI system falls under EU AI Act obligations and which requirements apply.
 - [IAPP AI Governance Professional (AIGP)](https://iapp.org/certify/aigp) - Certification covering AI risk assessment, policy development, and compliance implementation. The most widely recognized credential for AI governance practitioners.
 - [OWASP LLM AI Security and Governance Checklist](https://genai.owasp.org/) - Practical checklist for teams deploying LLM-powered systems in production.
-- [RansomLeak Agentic AI Security exercises](https://ransomleak.com/catalog/ai-security/) - Hands-on browser exercises for the OWASP Agentic AI Top 10 and MCP Top 10, plus an EU AI Act course covering oversight and incident reporting duties.
+- [RansomLeak Agentic AI Security exercises](https://ransomleak.com/) - Hands-on browser exercises for the OWASP Agentic AI Top 10 and MCP Top 10, plus an EU AI Act course covering oversight and incident reporting duties (navigate to the AI security catalog from the homepage; the direct catalog URL has changed).
 - [SANS Institute AI Security Resources](https://www.sans.org/artificial-intelligence) - SANS training and research on AI/ML security covering adversarial attacks, model security, and secure deployment practices.
 - [Singapore AI Governance Readiness Checklist](https://vyrwork.com/tools/singapore-ai-governance-readiness-checklist) - Free evidence-oriented checklist mapping IMDA's four agentic AI governance dimensions to 24 production-readiness prompts covering risk bounds, accountable ownership, lifecycle controls, and end-user responsibility.
 - [State of AI Governance Report](https://www.credo.ai/resources) - Annual enterprise survey of AI governance program maturity, common gaps, and implementation patterns from Credo AI.
@@ -353,7 +351,7 @@ Interactive tools that answer common governance questions without a signup. Each
 - [FAccT](https://facctconference.org/) - ACM Fairness, Accountability, and Transparency Conference. The primary academic venue for ML fairness and accountability research.
 - [AIES](https://www.aies-conference.com/) - AAAI/ACM AI Ethics and Society.
 - [Compliance Week Europe](https://www.complianceweek.com/) - Compliance officer audience; AI governance is an increasingly prominent track.
-- [AI Safety Summit](https://www.gov.uk/government/topical-events/ai-safety-summits) - UK-government-convened summits on frontier AI risks. Published commitments from labs and governments.
+- [AI Safety Summit](https://www.aisafetysummit.gov.uk/) - UK-government-convened summits on frontier AI risks. Published commitments from labs and governments.
 
 ---
 
@@ -368,7 +366,7 @@ Interactive tools that answer common governance questions without a signup. Each
 ## Books
 
 - [The Alignment Problem (Brian Christian, 2020)](https://brianchristian.org/the-alignment-problem/) - Accessible introduction to the alignment problem.
-- [Algorithms of Oppression (Safiya Umoja Noble, 2018)](https://safiyaunoble.com/research-writing/) - Foundational text on algorithmic bias and its real-world consequences.
+- [Algorithms of Oppression (Safiya Umoja Noble, 2018)](https://nyupress.org/9781479837243/algorithms-of-oppression/) - Foundational text on algorithmic bias and its real-world consequences.
 - [Atlas of AI (Kate Crawford, 2021)](https://katecrawford.net/) - Examines the material and political dimensions of AI infrastructure. Relevant background for anyone building governance frameworks that go beyond technical compliance.
 - [The Ethical Algorithm (Michael Kearns and Aaron Roth, 2019)](https://global.oup.com/academic/product/the-ethical-algorithm-9780190948207) - How to design algorithms that are fair, private, and robust. Written for practitioners, not just researchers.
 
