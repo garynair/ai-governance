@@ -7,7 +7,7 @@ A curated list of standards, regulations, tools, and platforms for governing AI 
 
 **Scope:** Anything that materially helps a practitioner build, ship, audit, or operate AI — including autonomous agents — in a way that is accountable, auditable, and compliant. Not pure AI ethics commentary, alignment philosophy, or generic AI news.
 
-**Why now:** The EU AI Act's high-risk obligations under Annex III apply from 2 August 2026. ISO/IEC 42001 certification programmes are live, and NIST AI RMF is production-ready. China's Interim Measures for generative AI have been in force since 2023, and India's DPDP Rules 2025 are now operationalising its data protection law with phased deadlines. The OWASP Agentic AI Top 10 documents real attack patterns. Claude Code, Copilot, Cursor, and autonomous agent frameworks are now standard tools in enterprise software teams. Governance is no longer optional.
+**Why now:** The EU AI Act's high-risk obligations under Annex III apply from 2 August 2026. ISO/IEC 42001 certification programs are live, and NIST AI RMF is production-ready. China's Interim Measures for generative AI have been in force since 2023, and India's DPDP Rules 2025 are now operationalising its data protection law with phased deadlines. The OWASP Agentic AI Top 10 documents real attack patterns. Claude Code, Copilot, Cursor, and autonomous agent frameworks are now standard tools in enterprise software teams. Governance is no longer optional.
 
 Contributions welcome.
 
@@ -24,7 +24,7 @@ Contributions welcome.
 - [Free Governance Tools](#free-governance-tools)
 - [Commercial and Enterprise Governance Platforms](#commercial-and-enterprise-governance-platforms)
 - [Claude Code and MCP Governance](#claude-code-and-mcp-governance)
-- [Policy Engines and Authorisation](#policy-engines-and-authorisation)
+- [Policy Engines and Authorization](#policy-engines-and-authorization)
 - [Audit, Observability, and Cost Control](#audit-observability-and-cost-control)
 - [Security, Red-Teaming, and Threat Models](#security-red-teaming-and-threat-models)
 - [Model and Data Governance](#model-and-data-governance)
@@ -45,7 +45,7 @@ AI agents with tool access operate with the same blast radius as a poorly-scoped
 
 Prompt injection causes agents to execute attacker-controlled instructions via untrusted tool output. Excessive agency allows agents to take actions beyond their intended scope. Unbounded costs emerge when agents loop or call expensive APIs without budget controls. Audit gaps mean that when something goes wrong, there is no record of what the agent did or why. Compliance exposure under the EU AI Act, ISO 42001, and NIST AI RMF requires documented governance evidence.
 
-A governed agent runs with least-privilege tool access, an immutable audit trail, budget enforcement, and policy checks that fire before any irreversible action. A governed AI programme, more broadly, can evidence to a regulator, auditor, or customer that the AI it ships is accountable and defensible.
+A governed agent runs with least-privilege tool access, an immutable audit trail, budget enforcement, and policy checks that fire before any irreversible action. A governed AI program, more broadly, can evidence to a regulator, auditor, or customer that the AI it ships is accountable and defensible.
 
 ---
 
@@ -59,13 +59,13 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 - [NIST AI 600-1: Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) - Companion profile to the AI RMF covering twelve risk areas specific to generative AI, including confabulation, information security, data privacy, and value-chain integration, plus specific considerations for agentic systems: planning, tool use, goal pursuit, and multi-step reasoning.
 - [Executive Order 14110 on Safe, Secure, and Trustworthy AI](https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence) - US federal requirements for AI safety testing, red-teaming, and disclosure for frontier models.
 - [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/) - White House principles for AI systems that affect Americans. Rescinded as US federal policy in January 2025 and retained here only as an archived reference, its five principles still shape procurement language and several state-level bills.
-- [UK ICO Guidance on AI and Data Protection](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/) - The UK regulator's positioning on automated decisions and AI under UK GDPR.
+- [UK ICO Guidance on AI and Data Protection](https://ico.org.uk/for-organizations/uk-gdpr-guidance-and-resources/artificial-intelligence/) - The UK regulator's positioning on automated decisions and AI under UK GDPR.
 - [FCA Consumer Duty](https://www.fca.org.uk/firms/consumer-duty) - UK financial-services regulator's framework, increasingly applied to AI-mediated outcomes.
 - [NHS DSPT](https://www.dsptoolkit.nhs.uk/) - NHS Data Security and Protection Toolkit. The compliance gate for healthtech ingesting NHS data.
 - [Singapore Model AI Governance Framework](https://www.pdpc.gov.sg/help-and-resources/2020/01/model-artificial-intelligence-governance-framework) - Widely referenced voluntary framework from Singapore's PDPC. Practical and well-structured for deployers.
 - [Canada Artificial Intelligence and Data Act (AIDA)](https://ised-isde.canada.ca/site/innovation-better-canada/en/artificial-intelligence-and-data-act) - Canada's proposed AI regulation, part of Bill C-27 (prorogued January 2025; did not become law). Retains relevance as the reference point for Canadian AI governance discussions.
 - [China: Interim Measures for the Management of Generative AI Services](https://www.chinalawtranslate.com/en/generative-ai-interim/) - China's first dedicated generative AI regulation, in force since August 2023 and jointly issued by seven state authorities led by the Cyberspace Administration of China. Covers providers of text, image, audio, video, and code generation services to the public. English translation via China Law Translate.
-- [Digital Personal Data Protection Act, 2023 (India)](https://www.meity.gov.in/content/digital-personal-data-protection-act-2023) - India's federal data protection law, governing the processing of digital personal data. The Digital Personal Data Protection Rules 2025, notified 13 November 2025, operationalise it with phased compliance deadlines.
+- [Digital Personal Data Protection Act, 2023 (India)](https://www.meity.gov.in/content/digital-personal-data-protection-act-2023) - India's federal data protection law, governing the processing of digital personal data. The Digital Personal Data Protection Rules 2025, notified 13 November 2025, operationalize it with phased compliance deadlines.
 - [OECD AI Principles](https://oecd.ai/en/ai-principles) - The baseline international principles adopted by 46 countries. Foundational vocabulary for cross-border deployments.
 
 ---
@@ -74,7 +74,7 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 
 - [ISO/IEC 23053](https://www.iso.org/standard/74438.html) - Framework for AI systems using machine learning. Defines key concepts, components, and lifecycle stages.
 - [ISO/IEC 23894](https://www.iso.org/standard/77304.html) - Guidance on AI risk management. Companion to ISO 42001 for operationalising risk processes.
-- [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html) - The international standard for AI management systems. Specifies requirements for establishing, implementing, maintaining, and continually improving an AI management system within an organisation. Certifiable, and certification programmes are now live.
+- [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html) - The international standard for AI management systems. Specifies requirements for establishing, implementing, maintaining, and continually improving an AI management system within an organization. Certifiable, and certification programs are now live.
 - [ISO/IEC 42005:2025](https://www.iso.org/standard/42005) - Guidance on AI system impact assessment: how and when to assess the effects of an AI system on individuals and society, and how to document it. Annex A maps it onto ISO/IEC 42001.
 - [ISO/IEC TR 24028](https://www.iso.org/standard/77608.html) - Overview of trustworthiness in AI. Covers accuracy, robustness, reliability, safety, security, and privacy.
 - [IETF SCITT WG](https://datatracker.ietf.org/wg/scitt/about/) - Supply Chain Integrity, Transparency and Trust. The relevant working group for cryptographic audit chains for software supply chains and increasingly for AI provenance.
@@ -89,10 +89,10 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 
 - [CISA Guidelines for Secure AI Development](https://www.cisa.gov/topics/artificial-intelligence) - US Cybersecurity and Infrastructure Security Agency guidance on secure AI system development and deployment.
 - [Cloud Security Alliance AI Safety Initiative](https://cloudsecurityalliance.org/research/topics/artificial-intelligence/) - Enterprise guidance on AI security, governance, and trust. Includes the AI Controls Matrix and assessment tools.
-- [CSA MAESTRO](https://github.com/CloudSecurityAlliance/MAESTRO) - Seven-layer threat modelling framework for agentic AI from the Cloud Security Alliance, separating traditional per-layer threats from agentic ones arising from autonomy and non-determinism.
-- [ENISA AI Threat Landscape](https://www.enisa.europa.eu/publications/artificial-intelligence-cybersecurity-challenges) - EU Agency for Cybersecurity reports on AI-specific threats, risk assessments, and guidelines for EU organisations.
-- [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Tactics, techniques, and real-world case studies for attacks against ML and AI systems, modelled on ATT&CK.
-- [MITRE ATT&CK for AI](https://attack.mitre.org/) - Machine learning attack techniques mapped to the ATT&CK framework for integration with existing threat intelligence programmes.
+- [CSA MAESTRO](https://github.com/CloudSecurityAlliance/MAESTRO) - Seven-layer threat modeling framework for agentic AI from the Cloud Security Alliance, separating traditional per-layer threats from agentic ones arising from autonomy and non-determinism.
+- [ENISA AI Threat Landscape](https://www.enisa.europa.eu/publications/artificial-intelligence-cybersecurity-challenges) - EU Agency for Cybersecurity reports on AI-specific threats, risk assessments, and guidelines for EU organizations.
+- [MITRE ATLAS](https://atlas.mitre.org/) - Adversarial Threat Landscape for AI Systems. Tactics, techniques, and real-world case studies for attacks against ML and AI systems, modeled on ATT&CK.
+- [MITRE ATT&CK for AI](https://attack.mitre.org/) - Machine learning attack techniques mapped to the ATT&CK framework for integration with existing threat intelligence programs.
 - [OWASP Agentic AI: Threats and Mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) - Threat-model reference for autonomous agents from the OWASP Agentic Security Initiative, with a taxonomy spanning agent design, memory, planning and autonomy, tool use, and deployment.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) - The ten most critical security risks for LLM-powered applications: prompt injection, insecure output handling, training data poisoning, model denial of service, and supply chain vulnerabilities.
 
@@ -102,7 +102,7 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 
 - [Concrete Problems in AI Safety (Amodei et al., 2016)](https://arxiv.org/abs/1606.06565) - The canonical pre-LLM safety paper. Still foundational vocabulary for the field.
 - [On the Opportunities and Risks of Foundation Models (Bommasani et al., 2021)](https://arxiv.org/abs/2108.07258) - Stanford CRFM's comprehensive survey of risks from large pre-trained models. The paper that put foundation model governance on the enterprise agenda.
-- [Constitutional AI: Harmlessness from AI Feedback (Bai et al., 2022)](https://arxiv.org/abs/2212.08073) - Anthropic's paper on guiding model behaviour via a written constitution.
+- [Constitutional AI: Harmlessness from AI Feedback (Bai et al., 2022)](https://arxiv.org/abs/2212.08073) - Anthropic's paper on guiding model behavior via a written constitution.
 - [Risks from Learned Optimization in Advanced Machine Learning Systems (Hubinger et al., 2019)](https://arxiv.org/abs/1906.01820) - Introduces mesa-optimization and deceptive alignment. Foundational for anyone designing oversight mechanisms for learned systems.
 - [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training (Hubinger et al., 2024)](https://arxiv.org/abs/2401.05566) - On models that behave differently in training versus deployment. Directly relevant to deployment-time audit requirements.
 - [Alignment Faking in Large Language Models (Greenblatt et al., 2024)](https://arxiv.org/abs/2412.14093) - Anthropic paper demonstrating that models can strategically comply during training while pursuing different goals at deployment. A significant input to the case for tamper-evident audit records.
@@ -128,7 +128,7 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 - [Hexis](https://github.com/Bevel-Software/Hexis) - Git-backed platform for skills, tools, and context for AI agents. Role-based access, reviewed changes, and an encrypted secrets vault govern what each person and their MCP client can use.
 - [HOL Guard](https://hol.org/guard) - Open-source local-first runtime governance layer for AI agents that evaluates supported tool actions before execution, applies policy checks for prompt injection, secret exposure, unsafe commands, package and MCP risks, and records approval or block receipts.
 - [Humanbound](https://github.com/humanbound/humanbound) - Open source testing framework that scores agent behavior against a security policy, targeting the risks in the OWASP Top 10 for Agentic Applications (prompt injection and goal hijacking listed first), and turns failed tests into guardrail rules.
-- [Kakunin](https://github.com/nqzai/kakunin-core) - Compliance and identity infrastructure for AI agents. Issues X.509 certificates via AWS KMS, enforces per-agent action scope before execution, scores behaviour against a rolling baseline, and auto-revokes credentials when risk crosses a threshold, with a tamper-evident audit trail for MiCA and the EU AI Act. Platform AGPL-3.0; SDKs Apache-2.0.
+- [Kakunin](https://github.com/nqzai/kakunin-core) - Compliance and identity infrastructure for AI agents. Issues X.509 certificates via AWS KMS, enforces per-agent action scope before execution, scores behavior against a rolling baseline, and auto-revokes credentials when risk crosses a threshold, with a tamper-evident audit trail for MiCA and the EU AI Act. Platform AGPL-3.0; SDKs Apache-2.0.
 - [Kepil](https://github.com/oleg-vdv/kepil) - AGPL-3.0 gate plus journal for agent actions. Every action is checked against a machine-readable per-job mandate before a model is called, fail-closed, and lands in an append-only hash-chained journal verified by a separate implementation in another language. Irreversible actions stop and wait for a person. Ships an MCP server exposing seven tools for creating orders, running steps, asking whether an action is permitted, and verifying the journal — confirming an irreversible action is deliberately not among them, enforced by a test. Python standard library only, no dependencies, state in plain JSON files.
 - [KYDE Gateway](https://github.com/kydehq/gateway) - Drop-in OpenAI-compatible proxy for OpenAI, Anthropic, Gemini, Copilot, local models, and others that records every agent action into an Ed25519-signed, hash-chained ledger and enforces DLP and per-MCP-tool policies before requests reach the upstream. Source-available BSL-1.1.
 - [LiteLLM](https://github.com/BerriAI/litellm) - Proxy layer for LLM API calls with per-key budgets, rate limiting, spend tracking, and model routing across all major providers.
@@ -143,7 +143,7 @@ A governed agent runs with least-privilege tool access, an immutable audit trail
 - [PolicyStrata](https://github.com/raintree-technology/policystrata) - Local-first policy regression testing and runtime decision gates for LLM data-agent stacks, with CI checks across model-visible tools, semantic validation, SQL compilation, database controls, and result release. MIT licensed.
 - [Presidio](https://github.com/microsoft/presidio) - Microsoft's PII detection and anonymisation SDK. Identifies and redacts sensitive data in text before it reaches an LLM or audit log.
 - [SteerPlane](https://github.com/vijaym2k6/SteerPlane) - Open-source runtime control plane for AI agents: deterministic loop detection, per-session cost ceilings with mid-stream termination, and a hierarchical deny/allow/rate-limit policy engine, enforced via a Python decorator or an OpenAI-compatible gateway proxy. Framework integrations for LangChain, CrewAI, AutoGen, and the OpenAI Agents SDK. No model in the enforcement path. MIT licensed; `pip install steerplane` / `npm install steerplane`.
-- [systemprompt-template](https://github.com/systempromptio/systemprompt-template) - Self-hosted governance layer for Claude Code and MCP agents. Authentication, authorisation, audit trail, cost controls, and policy enforcement in a single compiled Rust binary. Source-available BSL-1.1.
+- [systemprompt-template](https://github.com/systempromptio/systemprompt-template) - Self-hosted governance layer for Claude Code and MCP agents. Authentication, authorization, audit trail, cost controls, and policy enforcement in a single compiled Rust binary. Source-available BSL-1.1.
 - [ThumbGate](https://github.com/IgorGanapolsky/ThumbGate) - Local-first PreToolUse enforcement engine for AI coding agents. Runs in the agent's hook system to hard-block secret exfiltration, destructive deletes, and supply-chain attacks before the tool call executes. Turns thumbs-down feedback into auto-promoted prevention rules. Works with Claude Code, Cursor, Codex, Gemini CLI, Amp, Cline, and OpenCode. MIT licensed, npm installable.
 - [YYLO](https://github.com/yylo-dev/yylo) - Command-line orchestrator for coding agents with typed task, validation, merge, and release-readiness boundaries. Task start freezes the protected target SHA and creates a dedicated branch/worktree per task; the merge queue owns risk-based review (low risk has no semantic reviewer, high risk two sequential reviewers on one frozen candidate, stopping as REVIEW_FINDINGS_EXHAUSTED rather than an unbounded review loop). Workflow runs retain declared receipt hashes and terminal manifests as receipt-backed repository changes. Orchestrates Pi and Codex subagents. MIT licensed, npm installable as @yylo/cli.
 - [Nexuscone](https://github.com/aperintel/nexuscone) - Tamper-evident audit ledger with SHA-256 hash chain, optional Ed25519 signing, optional Bitcoin anchoring via OpenTimestamps. Apache 2.0.
@@ -182,12 +182,12 @@ Interactive tools that answer common governance questions without a signup. Each
 - [Gram](https://github.com/speakeasy-api/gram) - Open-source AI control plane for connecting agents to MCPs with role-scoped access, policy enforcement, threat detection, and observable access events.
 - [Lumenova AI](https://www.lumenova.ai/) - AI lifecycle governance: risk assessment, explainability monitoring, and compliance reporting focused on model transparency and regulatory evidence.
 - [Microsoft Entra Agent ID](https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id) - Directory identities for AI agents in Microsoft Entra, with lifecycle management, access reviews, entitlement management, and conditional access applied to agents as to users.
-- [OneTrust AI Governance](https://www.onetrust.com/solutions/ai-governance/) - Inventory, risk assessment, and compliance controls for AI systems embedded in broader data governance and privacy programmes.
+- [OneTrust AI Governance](https://www.onetrust.com/solutions/ai-governance/) - Inventory, risk assessment, and compliance controls for AI systems embedded in broader data governance and privacy programs.
 - [Patronus AI](https://www.patronus.ai/) - Automated evaluation and monitoring for LLMs in production. Detects hallucinations, toxicity, PII leakage, and custom policy violations.
 - [Penholder](https://penholder.ai) - Preventive human-approval write-gate for AI agents. Intercepts an agent's write to a system of record (Postgres or a governed spreadsheet) and holds it as a durable PENDING proposal that commits only after a human approves — fail-closed on conflict, with an append-only, hash-chained, tamper-evident provenance log. Framework-agnostic and enforced at the write boundary; public network MCP endpoint at api.penholder.ai/mcp.
 - [Proofpane](https://proofpane.com) - Runtime governance gateway for AI coding agents (Claude Code, Cursor, Codex) and automation platforms. Enforces policy allow/deny/human-in-the-loop and DLP redaction in the execution path, and writes a hash-chained audit that exports as an offline-verifiable, Ed25519-signed evidence pack mapped to NIST AI RMF, ISO 42001, EU AI Act, GDPR, and SOC 2.
 - [Protect AI](https://protectai.com/) - MLSecOps platform covering model scanning, supply chain security, and runtime protection for AI and ML systems.
-- [systemprompt.io](https://systemprompt.io) - Self-hosted AI governance infrastructure: a single compiled Rust binary on your own systems that governs, logs, and cost-controls every AI interaction across every provider and client (Claude, Codex, Gemini, or your own agents). Authentication, authorisation, audit trail, policy enforcement, and a provider gateway behind one /v1 endpoint. Air-gap capable. Source-available BSL-1.1 via [systemprompt-template](https://github.com/systempromptio/systemprompt-template).
+- [systemprompt.io](https://systemprompt.io) - Self-hosted AI governance infrastructure: a single compiled Rust binary on your own systems that governs, logs, and cost-controls every AI interaction across every provider and client (Claude, Codex, Gemini, or your own agents). Authentication, authorization, audit trail, policy enforcement, and a provider gateway behind one /v1 endpoint. Air-gap capable. Source-available BSL-1.1 via [systemprompt-template](https://github.com/systempromptio/systemprompt-template).
 
 ---
 
@@ -207,23 +207,23 @@ Interactive tools that answer common governance questions without a signup. Each
 - [Provenrail Guard](https://github.com/pofky/provenrail/tree/main/plugins/provenrail-guard) - Claude Code plugin that gates tool calls on a PreToolUse hook. Denies destructive commands (`rm -rf`, `terraform destroy`, `git push --force`, `DROP TABLE`, `chmod 777`) and leaked credentials before they run, escalates lower-confidence cases (`.env` access, deploys, migrations) to a human prompt recorded as oversight, and signs every allow, deny and approval into a hash-chained record that `pr verify` or a browser verifier can recompute offline. Policy is declared in a repo-local `.provenrail.json`. MIT.
 - [ProxyKey](https://github.com/neostorm112-boop/proxykey-mcp) - Credential proxy with a remote MCP server for Claude Code, Cursor and other MCP clients. Real API keys stay AES-256-GCM encrypted on the proxy; the agent issues, rotates and revokes virtual passes with per-pass IP binding, rate limits and request logs, and the toolset has no operation that returns a real key. Free hosted service; the encryption module is published at [proxykey-crypto](https://github.com/neostorm112-boop/proxykey-crypto).
 - [Snyk agent-scan](https://github.com/snyk/agent-scan) - Scanner for MCP servers, agent configurations, and agent skills; detects tool poisoning, tool shadowing, and prompt injection in tool descriptions, and can proxy MCP traffic. Formerly Invariant Labs MCP-Scan.
-- [systemprompt-core](https://github.com/systempromptio/systemprompt-core) - The MCP governance runtime. 30-crate Rust workspace handling authentication, authorisation, rate limiting, and logging for MCP server interactions. Published on crates.io under `systemprompt-*`.
+- [systemprompt-core](https://github.com/systempromptio/systemprompt-core) - The MCP governance runtime. 30-crate Rust workspace handling authentication, authorization, rate limiting, and logging for MCP server interactions. Published on crates.io under `systemprompt-*`.
 - [ThumbGate](https://github.com/IgorGanapolsky/ThumbGate) - PreToolUse hook-based enforcement layer that gates Claude Code's tool calls locally before execution. Hard-blocks secret exfiltration, destructive deletes, and supply-chain attacks. Self-improving rules from captured thumbs-down feedback.
 - [ToolHive](https://github.com/stacklok/toolhive) - Runs MCP servers in isolated containers with declared permissions, secrets management, and a signed server registry. Apache-2.0, with Kubernetes and CLI deployment modes.
 - [Verax](https://github.com/verax-ai/verax) - MCP server between an agent and its tools: each call passes a policy gate and leaves a signed decision record before it runs, an effect row is reconciled against it after, approval waits for an operator on the same machine, and the ledger stays there. Apache-2.0.
 
 ---
 
-## Policy Engines and Authorisation
+## Policy Engines and Authorization
 
 - [Allowly](https://allowly.ai/) - Hosted policy decisions and signed receipts for AI-agent actions; the caller enforces, and receipts verify offline with workspace Ed25519 keys using open-source Python (`allowly-receipt-format`) and TypeScript (`@allowly/verifier`) verifiers, with a [CC BY 4.0 specification and interoperability map](https://github.com/Allowly-AI/allowly-receipt-format/blob/main/INTEROP.md).
 - [amu-governance](https://github.com/sangaraju1988/amu-governance) - Lineage-gated access control library for AI-agent shared memory. Gates retrieval on the full column-level derivation of a cached result, not just content tags, to block cross-department leakage through legitimately-computed results. MIT license, `pip install amu-governance`. Author-submitted; accompanying paper published in IEEE Access (2026).
-- [AWS Verified Permissions](https://aws.amazon.com/verified-permissions/) - Managed Cedar policy service on AWS. Centralised policy storage with sub-millisecond evaluation latency for agent action authorisation.
+- [AWS Verified Permissions](https://aws.amazon.com/verified-permissions/) - Managed Cedar policy service on AWS. Centralised policy storage with sub-millisecond evaluation latency for agent action authorization.
 - [Casbin](https://www.casbin.org/) - Multi-model access control library supporting ACL, RBAC with hierarchy and domain, ABAC, and RESTful models in 10+ languages, including Go, Rust, Python, Java, and Node.js.
-- [Cedar](https://www.cedarpolicy.com/) - AWS-designed policy language and engine for fine-grained authorisation. Formally verified semantics, expressive human-readable syntax, and high throughput for per-request agent permission decisions.
+- [Cedar](https://www.cedarpolicy.com/) - AWS-designed policy language and engine for fine-grained authorization. Formally verified semantics, expressive human-readable syntax, and high throughput for per-request agent permission decisions.
 - [GOPAL](https://github.com/Principled-Evolution/gopal) - Library of OPA/Rego policies encoding AI-governance regulations as executable allow/deny checks, covering the EU AI Act, NIST AI RMF, UK GDPR Arts 22A-22D, aviation (ICAO/FAA/EASA), FERPA, and financial-services rules. Loads into an OPA server for request-path queries or runs under `opa eval`. Apache-2.0.
 - [HashiCorp Sentinel](https://www.hashicorp.com/sentinel) - Policy-as-code framework for Terraform, Vault, Consul, and Nomad. Useful for governing infrastructure provisioned by AI agents.
-- [Open Policy Agent](https://github.com/open-policy-agent/opa) - CNCF-graduated general-purpose policy engine using the Rego language. Decouples policy from application logic; increasingly used for agent tool authorisation.
+- [Open Policy Agent](https://github.com/open-policy-agent/opa) - CNCF-graduated general-purpose policy engine using the Rego language. Decouples policy from application logic; increasingly used for agent tool authorization.
 - [OPA Rego Playground](https://play.openpolicyagent.org/) - Browser-based environment for writing and testing OPA/Rego policies without local setup.
 - [Ory Keto](https://github.com/ory/keto) - Open-source permission server implementing Google Zanzibar's relation-based access control model for fine-grained agent tool permissions.
 
@@ -260,7 +260,7 @@ Interactive tools that answer common governance questions without a signup. Each
 
 ## Security, Red-Teaming, and Threat Models
 
-- [AgentDojo](https://github.com/ethz-spylab/agentdojo) - Benchmark from ETH Zurich's SPY Lab measuring both utility and security of tool-using agents under indirect prompt injection, with pluggable attacks and defences.
+- [AgentDojo](https://github.com/ethz-spylab/agentdojo) - Benchmark from ETH Zurich's SPY Lab measuring both utility and security of tool-using agents under indirect prompt injection, with pluggable attacks and defenses.
 - [AI Incident Database](https://incidentdatabase.ai/) - Searchable database of 700+ documented AI system failures and harms in deployment. Essential for building realistic threat models and risk assessments.
 - [awesome-ai-agent-attacks](https://github.com/webpro255/awesome-ai-agent-attacks) - Curated timeline of 160+ documented AI agent security incidents, breaches, and vulnerabilities (2024-2026). Every entry dated, sourced, and categorized by attack pattern.
 - [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - GPL-3.0 autonomous AI penetration testing platform. Agentic reasoning drives real exploit execution across web, API, cloud, identity, CI/CD, IaC, Active Directory, and Kubernetes, producing proof-based findings; a privacy gateway keeps real hosts, addresses, and credentials out of the LLM context.
@@ -294,9 +294,9 @@ Interactive tools that answer common governance questions without a signup. Each
 - [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) - Adaptation of the 12-factor app methodology for LLM agents. Covers configuration, state management, logging, and disposability in agentic contexts.
 - [Anthropic: Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) - Anthropic's published guidance on safe agentic systems: minimal footprint, human-in-the-loop for high-stakes actions, and preference for reversible over irreversible actions.
 - [awesome-agentic-patterns](https://github.com/nibzard/awesome-agentic-patterns) - Curated collection of production agent patterns including sandboxing, credential management, human-in-the-loop workflows, and multi-agent coordination.
-- [Bounded Agents](https://github.com/xmuruaga/bounded-agents) - Reference implementation of the Agentic Principal Chain (APC), an external authorisation architecture that attenuates delegated scope and budgets across multi-agent chains, evaluates tool actions against session history, and enforces composition restrictions outside the model. Includes the [paper](https://arxiv.org/abs/2608.15888).
+- [Bounded Agents](https://github.com/xmuruaga/bounded-agents) - Reference implementation of the Agentic Principal Chain (APC), an external authorization architecture that attenuates delegated scope and budgets across multi-agent chains, evaluates tool actions against session history, and enforces composition restrictions outside the model. Includes the [paper](https://arxiv.org/abs/2608.15888).
 - [HumanLayer](https://github.com/humanlayer/humanlayer) - SDK for building human-in-the-loop workflows for AI agents. Wraps tool calls with approval gates, audit trails, and escalation paths.
-- [Least privilege as an import contract](https://github.com/chohan-sarmad-ali/delivery-case-studies/blob/main/05-least-privilege-as-an-import-contract.md) - Single-egress architecture for agent systems: all outbound calls originate from one package behind policy checks and mandatory human approval, an import-linter contract enforced in CI keeps it single, and a static AST gate closes the authorisation gap the import contract cannot see. Includes the incident that motivated the layering and the limits of each layer.
+- [Least privilege as an import contract](https://github.com/chohan-sarmad-ali/delivery-case-studies/blob/main/05-least-privilege-as-an-import-contract.md) - Single-egress architecture for agent systems: all outbound calls originate from one package behind policy checks and mandatory human approval, an import-linter contract enforced in CI keeps it single, and a static AST gate closes the authorization gap the import contract cannot see. Includes the incident that motivated the layering and the limits of each layer.
 - [Lilian Weng: LLM-Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) - Comprehensive survey of agent architectures including planning, memory, tool use, and oversight mechanisms.
 - [agentgateway](https://agentgateway.dev/) - Linux Foundation open-source proxy for MCP tool calls and agent-to-agent traffic. Includes an OPA policy engine, RBAC, and OTel emission. A governance control point for agentic tool use.
 - [OpenTelemetry GenAI Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/) - The emerging standard for emitting structured observability spans from AI and agent systems. Required reading for anyone building agentic audit infrastructure.
@@ -309,7 +309,7 @@ Interactive tools that answer common governance questions without a signup. Each
 
 - [Fairlearn](https://fairlearn.org/) - Microsoft's open-source toolkit for assessing and improving model fairness. Python API, mitigation algorithms, and a visual dashboard.
 - [AI Fairness 360 (AIF360)](https://github.com/IBM/AIF360) - IBM Research's open-source library covering bias detection and mitigation from pre-processing through to post-processing.
-- [What-If Tool](https://pair-code.github.io/what-if-tool/) - Google's visual interface for probing ML model behaviour across demographic subgroups, without writing code.
+- [What-If Tool](https://pair-code.github.io/what-if-tool/) - Google's visual interface for probing ML model behavior across demographic subgroups, without writing code.
 - [Aequitas](https://github.com/dssg/aequitas) - Open-source bias and fairness audit toolkit from the University of Chicago Data Science for Social Good group.
 - [Algorithmic Impact Assessment (AIA) Guidance](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/algorithmic-impact-assessment.html) - Canada's published framework for assessing the impact of automated decision-making in public-sector contexts. Widely referenced in private-sector practice.
 - [NYC Local Law 144 (Automated Employment Decision Tools)](https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page) - The first US law to mandate bias audits for AI in hiring. Sets a practical floor for what a bias audit must demonstrate.
@@ -330,7 +330,7 @@ Interactive tools that answer common governance questions without a signup. Each
 - [Google Secure AI Framework](https://safety.google/cybersecurity-advancements/saif/) - Google's framework for securing AI systems with six core elements covering foundations, detection, response, and standardisation.
 - [NIST AI Resource Center](https://airc.nist.gov/) - Central hub for NIST AI governance resources including AI RMF, TEVV guidance, and sector-specific playbooks.
 - [OpenSSF AI/ML Security Working Group](https://openssf.org/) - Open Source Security Foundation working group on security for AI and ML supply chains. Produces guidance on securing training pipelines and model artifacts.
-- [Partnership on AI](https://partnershiponai.org/) - Multi-stakeholder organisation producing research and guidance on responsible AI development and deployment practices.
+- [Partnership on AI](https://partnershiponai.org/) - Multi-stakeholder organization producing research and guidance on responsible AI development and deployment practices.
 - [UK NCSC: Guidelines for Secure AI System Development](https://www.ncsc.gov.uk/collection/guidelines-secure-ai-system-development) - Co-authored by NCSC (UK), CISA (US), ACSC (Australia), and 15 other national cybersecurity agencies. Practical security guidance across the AI development lifecycle.
 
 ---
@@ -338,12 +338,12 @@ Interactive tools that answer common governance questions without a signup. Each
 ## Learning Resources
 
 - [EU AI Act Compliance Checker](https://artificialintelligenceact.eu/assessment/eu-ai-act-compliance-checker/) - Interactive tool for assessing whether a specific AI system falls under EU AI Act obligations and which requirements apply.
-- [IAPP AI Governance Professional (AIGP)](https://iapp.org/certify/aigp) - Certification covering AI risk assessment, policy development, and compliance implementation. The most widely recognised credential for AI governance practitioners.
+- [IAPP AI Governance Professional (AIGP)](https://iapp.org/certify/aigp) - Certification covering AI risk assessment, policy development, and compliance implementation. The most widely recognized credential for AI governance practitioners.
 - [OWASP LLM AI Security and Governance Checklist](https://genai.owasp.org/) - Practical checklist for teams deploying LLM-powered systems in production.
-- [RansomLeak Agentic AI Security exercises](https://ransomleak.com/catalogue/ai-security/) - Hands-on browser exercises for the OWASP Agentic AI Top 10 and MCP Top 10, plus an EU AI Act course covering oversight and incident reporting duties.
+- [RansomLeak Agentic AI Security exercises](https://ransomleak.com/catalog/ai-security/) - Hands-on browser exercises for the OWASP Agentic AI Top 10 and MCP Top 10, plus an EU AI Act course covering oversight and incident reporting duties.
 - [SANS Institute AI Security Resources](https://www.sans.org/artificial-intelligence) - SANS training and research on AI/ML security covering adversarial attacks, model security, and secure deployment practices.
 - [Singapore AI Governance Readiness Checklist](https://vyrwork.com/tools/singapore-ai-governance-readiness-checklist) - Free evidence-oriented checklist mapping IMDA's four agentic AI governance dimensions to 24 production-readiness prompts covering risk bounds, accountable ownership, lifecycle controls, and end-user responsibility.
-- [State of AI Governance Report](https://www.credo.ai/resources) - Annual enterprise survey of AI governance programme maturity, common gaps, and implementation patterns from Credo AI.
+- [State of AI Governance Report](https://www.credo.ai/resources) - Annual enterprise survey of AI governance program maturity, common gaps, and implementation patterns from Credo AI.
 
 ---
 
@@ -387,8 +387,8 @@ Interactive tools that answer common governance questions without a signup. Each
 
 PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the criteria a new entry must meet.
 
-## Licence
+## License
 
 This list merges and deduplicates two source lists: [awesome-ai-agent-governance](https://github.com/systempromptio/awesome-ai-agent-governance) (runtime governance of AI agents) and [awesome-ai-governance](https://github.com/Aperintelligence/awesome-ai-governance) (AI governance for regulated environments). Both were released under CC0 1.0 Universal.
 
-This list is published under [CC0 1.0 Universal](LICENSE), consistent with the licence of both source lists it merges. The linked resources retain their own licences.
+This list is published under [CC0 1.0 Universal](LICENSE), consistent with the license of both source lists it merges. The linked resources retain their own licenses.

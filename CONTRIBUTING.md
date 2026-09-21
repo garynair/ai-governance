@@ -11,7 +11,7 @@ Thank you for considering a contribution. This list spans two things: AI governa
 - Commercial governance platforms with a mature regulator-facing posture, or enterprise platforms for AI risk, governance, and compliance.
 - AI security and red-team tools, observability tools, audit tools, and cost-control tools.
 - Architecture patterns for safe production agent deployment.
-- Regulators, policy-making bodies, and industry programmes.
+- Regulators, policy-making bodies, and industry programs.
 - Conferences, newsletters, and books that practitioners actually read.
 
 ## What does not belong here
@@ -34,7 +34,7 @@ Thank you for considering a contribution. This list spans two things: AI governa
 
 ## Style
 
-- British English in the description copy.
+- American English in the description copy.
 - No em-dashes used as sentence punctuation.
 - No emojis.
 - Avoid banned vocabulary (delve, leverage, harness, robust, seamless, holistic, transformative, paradigm). Plain language wins.
@@ -49,7 +49,7 @@ Thank you for considering a contribution. This list spans two things: AI governa
 
 A maintainer reviews PRs within seven days. Most PRs that meet the criteria above land within two weeks. PRs that need clarification stay open for up to thirty days; after that they close with a polite note.
 
-## Licence
+## License
 
 By contributing you agree your contribution is released under CC0 1.0 Universal.
 
