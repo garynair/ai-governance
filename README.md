@@ -1,3 +1,5 @@
+![AI Governance](docs/banner.png)
+
 # AI Governance
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
